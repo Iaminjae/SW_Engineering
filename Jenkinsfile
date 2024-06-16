@@ -26,7 +26,7 @@ pipeline {
         stage('Test') {
             steps {
                 // JUnit 5 테스트 실행
-                sh "java -Dfile.encoding=UTF-8 -cp ${classpath} org.junit.platform.console.ConsoleLauncher --scan-classpath > test_results.txt"
+                sh "java -Dfile.encoding=UTF-8 -cp ${classpath} org.junit.platform.console.ConsoleLauncher --scan-classpath > testResults.txt"
             }
         }
     }
