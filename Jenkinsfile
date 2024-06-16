@@ -1,4 +1,4 @@
-// JUnit 5 테스트를 위한 경로 변수 구성
+// JUnit 테스트 경로 변수 설정
 def classpath = "classes:lib/junit-platform-console-standalone-1.7.1.jar"
 
 pipeline {
@@ -32,7 +32,7 @@ pipeline {
     }
     post {
         always {
-            archiveArtifacts artifacts: 'test_results.txt', allowEmptyArchive: true
+            archiveArtifacts artifacts: 'testResults.txt', allowEmptyArchive: true
         }
         failure {
             echo 'Build or test failed'
