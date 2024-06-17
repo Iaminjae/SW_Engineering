@@ -92,7 +92,7 @@ class BookManagerTest {
             bookManager.searchBook(id);
         }
         endTime = System.currentTimeMillis();
-        System.out.println("순차 탐색은" + (endTime - startTime) + " ms" + "이 소요되었습니다.");
+        System.out.println("순차 탐색은 " + (endTime - startTime) + "ms" + "이 소요되었습니다.");
 
         // 이진 검색 성능 측정
         startTime = System.currentTimeMillis();
@@ -102,6 +102,6 @@ class BookManagerTest {
         }
 
         endTime = System.currentTimeMillis();
-        System.out.println("이진 탐색은" + (endTime - startTime) + " ms" + "이 소요되었습니다.");
+        System.out.println("이진 탐색은 " + (endTime - startTime) + "ms" + "이 소요되었습니다.");
     }
 }
